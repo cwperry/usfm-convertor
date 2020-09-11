@@ -3,6 +3,7 @@ package com.cellnine.test.assertj;
 import com.cellnine.usfm.Book;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
 import org.assertj.core.presentation.StandardRepresentation;
 
 public class JsonRepresentation extends StandardRepresentation {
@@ -11,6 +12,7 @@ public class JsonRepresentation extends StandardRepresentation {
 
   public JsonRepresentation() {
     mapper = new ObjectMapper();
+    mapper.registerModule(new Jdk8Module());
   }
 
   @Override

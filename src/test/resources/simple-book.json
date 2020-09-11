@@ -1,0 +1,68 @@
+{
+  "name" : "The Simple Book",
+  "id" : "SIM",
+  "tableOfContents2" : "Simple",
+  "tableOfContents3" : "Sim",
+  "majorTitle" : "The Simple Book",
+  "majorTitle2" : "Smaller Title",
+  "majorTitle3" : "Smallest Title",
+  "chapters" : [ {
+    "book" : "SIM",
+    "chapterNumber" : 1,
+    "paragraphs" : [ {
+      "elements" : [ {
+        "chapterNumber" : 1,
+        "verseNumber" : 1,
+        "text" : "Chapter one, verse one.",
+        "chapterId" : "001001"
+      }, {
+        "chapterNumber" : 1,
+        "verseNumber" : 2,
+        "text" : "Chapter one, verse two.",
+        "chapterId" : "001002"
+      } ]
+    }, {
+      "elements" : [ {
+        "chapterNumber" : 1,
+        "verseNumber" : 3,
+        "text" : "Chapter one, verse three.",
+        "chapterId" : "001003"
+      }, {
+        "chapterNumber" : 1,
+        "verseNumber" : 4,
+        "text" : "Chapter one, verse four.",
+        "chapterId" : "001004"
+      } ]
+    } ],
+    "chapterId" : "SIM001"
+  }, {
+    "book" : "SIM",
+    "chapterNumber" : 2,
+    "paragraphs" : [ {
+      "elements" : [ {
+        "chapterNumber" : 2,
+        "verseNumber" : 1,
+        "text" : "Chapter two, verse one.",
+        "chapterId" : "002001"
+      }, {
+        "chapterNumber" : 2,
+        "verseNumber" : 2,
+        "text" : "Chapter two, verse two.",
+        "chapterId" : "002002"
+      } ]
+    }, {
+      "elements" : [ {
+        "chapterNumber" : 2,
+        "verseNumber" : 3,
+        "text" : "Chapter two, verse three.",
+        "chapterId" : "002003"
+      }, {
+        "chapterNumber" : 2,
+        "verseNumber" : 4,
+        "text" : "Chapter two, verse four.",
+        "chapterId" : "002004"
+      } ]
+    } ],
+    "chapterId" : "SIM002"
+  } ]
+}
