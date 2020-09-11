@@ -1,0 +1,25 @@
+\id SIM 01 simple-book.usfm, Bible, September 2020
+\usfm 3.0
+\ide UTF-8
+\sts draft
+\toc1 The Simple Book
+\toc2 Simple
+\toc3 Sim
+\mt1 The Simple Book
+\mt2 Smaller Title
+\mt3 Smallest Title
+\rem Chapter 1
+\c 1
+\p
+\v 1 Chapter one, verse one.
+\v 2 Chapter one, verse two.
+\p
+\v 3 Chapter one, verse three.
+\v 4 Chapter one, verse four.
+\c 2
+\p
+\v 1 Chapter two, verse one.
+\v 2 Chapter two, verse two.
+\p
+\v 3 Chapter two, verse three.
+\v 4 Chapter two, verse four.
