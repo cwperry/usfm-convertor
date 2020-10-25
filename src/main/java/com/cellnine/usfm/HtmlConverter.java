@@ -12,29 +12,29 @@ public class HtmlConverter {
   }
 
   public String renderBook() {
-    return html(
+    return document(html(
         head(
             title(String.format("New Era Bible | %s", book.name())),
             meta().attr(CHARSET, "utf-8"),
             link().withHref("normalize.css")
                 .withRel("stylesheet"),
-            link().withHref("normalize.css")
+            link().withHref("style.css")
                 .withRel("stylesheet")),
         body(
-            h1(book.name()),
-            iff(book.tableOfContents2()
+            h1(book.majorTitle()),
+            iff(book.majorTitle2()
                     .isPresent(),
-                h2(book.tableOfContents2()
+                h2(book.majorTitle2()
                        .get())),
-            iff(book.tableOfContents3()
+            iff(book.majorTitle3()
                     .isPresent(),
-                h3(book.tableOfContents3()
+                h3(book.majorTitle3()
                        .get())))
 //                each(book.chapters(), chapter -> p(span().withClass("chapter").withId("001001"),
 //                     each(chapter.paragraphs())))
 //                )
 
-               ).render();
+               ).attr("lang", "en"));
   }
 
 

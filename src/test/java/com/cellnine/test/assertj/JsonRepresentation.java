@@ -1,6 +1,5 @@
 package com.cellnine.test.assertj;
 
-import com.cellnine.usfm.Book;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;

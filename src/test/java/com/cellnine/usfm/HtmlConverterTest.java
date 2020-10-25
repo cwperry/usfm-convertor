@@ -1,11 +1,12 @@
 package com.cellnine.usfm;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
+import com.cellnine.test.assertj.HtmlRepresentation;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.assertj.core.api.Assertions.assertThat;
-
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -17,8 +18,13 @@ class HtmlConverterTest {
     private HtmlConverter converter;
     private String expectedHtml;
 
+    @BeforeAll
+    public static void init() {
+        Assertions.useRepresentation(new HtmlRepresentation());
+    }
+
     @BeforeEach
-    public void setup() throws IOException {
+    public void beforeTests() throws IOException {
         List<String>  lines = Files.readAllLines(Path.of("src/test/resources/simple-book.usfm"), StandardCharsets.UTF_8);
         Book book = new UsfmToBookConverter().convert(lines);
         expectedHtml = Files.readString(Path.of("src/test/resources/simple-book.html"));
